@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Form">
+    <meta name="keywords" content="Web design, Web development, photography">
+    <meta name="author" content="Alexei Quintero">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alexei Quintero-Contact
+    </title>
+    <link rel="icon" type="image/png" href="./img/aq-favicon-blue.png">
+    <!-- Google san-serif font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Google serif font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Poppins&display=swap"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Noto+Serif:wght@700&family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Adobe font style        -->
+    <link rel="stylesheet" href="https://use.typekit.net/ice8wuw.css">
+
+    <!-- stylsheet -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <!-- Body starts here -->
+
+  <body>
+    <header>
+     
+    
+    <main class="main-pages">
+     
+    <section class="contact-form">
+
+        <h3 class="heading-background-blue">Get in Touch</h3>
+        <form action="<?php echo htmlspecialchars(
+            $_SERVER["PHP_SELF"]
+        ); ?>" onsubmit="return handleForm()" method="post">
+          <div class="clearfix">
+          <div class="box">
+          <label for="full-name">Full name:</label><br>
+          <input type="text" id="full-name" name="full-name"  value="<?php if (
+              isset($name) &&
+              !$valid
+          ) {
+              echo $name;
+          } ?>" placeholder="Enter your full name">
+          
+          </div>
+          <div class="box">
+          <label for="email">Email address</label><br>
+          <input type="email" id="email" name="email"  value="<?php if (
+              isset($email) &&
+              !$valid
+          ) {
+              echo $email;
+          } ?>" placeholder="Enter your email address">
+          </div>
+          </div>
+          <h4 class="headers1-form">Got a project? Send us some details!</h4>
+          <textarea name="message"  rows="10" cols="40" >
+              </textarea><br>
+          <input type="submit" name="collect-data" id="submit" value="Submit">
+        </form>
+        <p class="feedbackjs"></p>
+        <ul class="errorjs"></ul>
+        <?php
+        if (isset($feedback)) {
+            echo $feedback;
+        }
+
+        if (isset($error)) {
+            echo $error;
+        }
+        ?>
+      </section>
+    </main>
+
+
+   
+    <script src="./js/index.js"> </script>
+  </body>
+
+</html>
