@@ -9,7 +9,7 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-main {
+.wrapper {
     width: 25rem;
     margin: 0 auto;
   }
@@ -28,23 +28,15 @@ form {
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: #9a9daf;
-  PADDING: 1rem;
+  
 }
 .error {
   color: red;
 }
-.headers1-form {
-  text-align: center;
-  color: #ffffff;
-  padding: 0.2rem 0;
-  width: 100%;
-  border-bottom: 0.2rem solid #f16139;
-  background-color: #4a4e6f;
-  margin-top: 0;
-}
+
 
 label {
-  color: #2b2f4c;
+  color: black;
 }
 
 input[type="text"],
@@ -83,15 +75,8 @@ input[type="submit"] {
   width: 25%;
 }
 
-#commercial {
-  margin-bottom: 1rem;
-}
 
-placeholder {
-  color: #9a9daf;
-  font-size: 1rem;
-  font-weight: 100;
-}
+
 /* //js errors for form */
 .feedback-js {
   color: green;
