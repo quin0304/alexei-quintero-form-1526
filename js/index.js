@@ -1,11 +1,11 @@
 let fm = document.querrySelector('form');//for the form
 let fn = document.getElementById('full-name');//for full name
 let em = document.getElementById('email');//for email
-let msg = document.getElementById('message');//formessage
+let msg = document.getElementById('message');//fo rmessage
 let fb = document.querySelector('.feedback-js');//for feedback to appear bellow form
 let err = document.querySelector('.errors-js');//for errors to appear bellow form
 let regex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;//expression to create a filter for proper email input-written inside forward slashes
-
+let sbm = document.getElementById('submit');//for submit
 
 
 
@@ -25,10 +25,9 @@ function handleForm(event){
     
         data.name = fn.value;//new property for name is declared inside the data object
     
-    } 
-else{
+    } else{
     errors.push('Name is empty. Please enter your full name');
-}
+    }
 
     if (em.value !== ''){
         if(regex.test(em.value)){
@@ -44,32 +43,30 @@ else{
     
         data.message = msg.value;//new property for message is declared inside the data object
     
-    } 
-else{
+    } else{
     errors.push('Message is empty. Please write your message');
-}
+    }
 
-//handles feedback//error messages
+    //handles feedback//error messages
 
-if(errors.length === 0){
+    if(errors.length === 0){
     console.log(data);
-    
     fb.textContent = 'Thank you ' + fn.value + ' for filling out the form. Your email ' + em.value + ' is saved. And your message is: <br>' + msg.value;
     err.textContent = '';
     //clears the text inputs
     fm.reset();
-} else {
+    } else {
     console.log(errors);
     fb.textContent = '';
-   //prints error message bellow the form
-  for(let singleError of errors){
+     //prints error message bellow the form
+    for(let singleError of errors){
       //programmatically create list item
     let li = document.createElement('li');
      //add error message to list
     li.textContent = singleError;
         //append list item to unordered list
     err.appendChild(li);
-  } 
+    } 
 }
 
 }
