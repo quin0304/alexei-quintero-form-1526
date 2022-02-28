@@ -1,3 +1,5 @@
+document.querrySelector('form');
+
 let submit = document.getElementById('submit');
 function submitMesg{
     on
