@@ -21,7 +21,7 @@ html {
 
 
 form {
- position: absolute;
+ 
   width: 20rem;
   margin: 0 auto;
   font-size: 1rem;
@@ -41,8 +41,8 @@ padding: 0.8rem;
   background-color: #F5F5F5;
 font-size: 1rem;
   border: 0.1rem solid #DDD;
-  top: -20%;
-  z-index:
+ 
+  
   
 }
  .box-title h1{
