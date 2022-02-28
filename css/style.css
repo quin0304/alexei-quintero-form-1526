@@ -26,23 +26,22 @@ form {
   font-size: 1rem;
   line-height: 1.4;
   background-color: #DDD;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   padding: 1rem;
-  box-shadow: #9a9daf;
+  
   
 }
 
 .box-title {
 width: fit-content;
-padding: 0.5rem;
-
-  
-}
-h1.box-title {
- font-size: 1.2rem;
+padding: 0.8rem;
   color: black;
   background-color: #F5F5F5;
+font-size: 1.2rem;
+  border: 0.1rem solid #DDD;
+  
 }
+
 
 .error {
   color: red;
@@ -67,7 +66,7 @@ select {
 textarea {
   border: 0.1rem solid #DDD;
   margin-bottom: 0.5rem;
-  width: 99%;
+  width: 100%;
   resize: none;
 }
 
