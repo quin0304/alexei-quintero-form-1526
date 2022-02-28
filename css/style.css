@@ -1,4 +1,4 @@
-//Colors #DDD #F5F5F5 #6495ED
+/* //Colors #DDD #F5F5F5 #6495ED */
 
 img,
 object {
@@ -16,83 +16,85 @@ html {
 }
 
 .wrapper {
-    width: 25rem;
+  width: 25rem;
+  margin: auto;
 }
 
-
 form {
- 
   width: 20rem;
   margin: 0 auto;
   font-size: 1rem;
   line-height: 1.4;
-  background-color: #DDD;
-  border-radius: 0.5rem;
+  background-color: #ddd;
+  border: 0.1rem solid rgb(192, 191, 191);
+  border-radius: 0.2rem;
   padding: 1rem;
-  margin-top: 1rem;
- 
+  margin-top: 3rem;
 }
 .box-title {
-   position: absolute;
-  z-index: 5; 
-   top: -20px;
-width: fit-content;
-padding: 0.8rem;
+  position: absolute;
+  z-index: 5;
+  top: 1rem;
+  width: fit-content;
+  padding: 0.8rem;
   color: black;
-  background-color: #F5F5F5;
-font-size: 1rem;
-  border: 0.1rem solid #DDD;
- 
-  
-  
+  background-color: #f5f5f5;
+
+  border: 0.1rem solid #ddd;
 }
- .box-title h1{
-   margin: 0;
+legend {
+  margin: 0;
+  font-size: 2rem;
+}
+.box-name {
+  margin-top: 3rem;
+}
 
 .error {
   color: red;
 }
 
-
 label {
   color: black;
+  font-size: 1.2rem;
 }
 
-input[type="text"],
-input[type="email"],
-select {
-  border: 0.1rem solid #DDD;
-  
-  
-  padding: 0.3rem;
-  margin-top: 0;
+input[type="text"] {
+  width: 100%;
+  border: 0.1rem solid rgb(192, 191, 191);
+  border-radius: 0.2rem;
+  background-color: #f5f5f5;
+  padding: 0.8rem 0.5rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
+  display: inline-block;
+  box-sizing: border-box;
 }
 
 textarea {
-  border: 0.1rem solid #DDD;
+  background-color: #f5f5f5;
+  border: 0.1rem solid rgb(192, 191, 191);
+  border-radius: 0.2rem;
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   width: 100%;
   resize: none;
+  box-sizing: border-box;
 }
-
-
 
 input[type="submit"] {
-  margin-top: 1rem;
-  
-  font-size: 1.1rem;
-  background-color: #6495ED;
-  color: white;
-  padding: 0.3rem 0;
-  border: none;
-  border-radius: 0.1rem;
-  text-align: center;
-  
   width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  background-color: #6495ed;
+  color: white;
+  padding: 0.8rem 0;
+  border: none;
+  border-radius: 0.3rem;
+  text-align: center;
 }
-
-
 
 /* //js errors for form */
 .feedback-js {
@@ -103,45 +105,82 @@ input[type="submit"] {
 }
 /* --------MEDIA QUERIES------- */
 
-/* Landscape phone and up */
+/* Tablets between25 rem and 40rem */
 
-@media only screen and (min-width: 50rem) {
-main {
-    width: 90%;
-    margin: 0 auto;
+@media screen and (min-width: 40rem) {
+  .wrapper {
+    width: 35rem;
+    margin: auto;
   }
 
-h1 {
-    color: #000000;
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: 300;
-  }
-
-  h2 {
-    font-size: 1.3rem;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-  }
-
-  h4,
-  h5 {
-    font-size: 1.1rem;
-  }
   form {
-    font-size: 1.2rem;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.6rem;
     line-height: 1.6;
+    margin-top: 5rem;
+  }
+  .box-title {
+    position: absolute;
+    top: 2.5rem;
+    padding: 1rem;
+  }
+  legend {
+    margin: 0;
+    font-size: 2rem;
+  }
+  .box-name {
+    margin-top: 3rem;
+    float: left;
+    width: 48%;
   }
 
-  input[type="text"],
-  select {
-    width: 90%;
-  }
-  input[type="email"] {
-    width: 97%;
+  .box {
+    margin-top: 3rem;
+    float: right;
+    width: 48%;
   }
 
- 
+  input[type="submit"] {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  .wrapper {
+    width: 45rem;
+    margin: auto;
+  }
+
+  form {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-top: 5rem;
+  }
+  .box-title {
+    position: absolute;
+    top: 2.5rem;
+    padding: 1rem;
+  }
+  .box-title h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  .box-name {
+    margin-top: 3rem;
+    float: left;
+    width: 48%;
+  }
+
+  .box {
+    margin-top: 3rem;
+    float: right;
+    width: 48%;
+  }
+
+  input[type="submit"] {
+    width: 30%;
+  }
 }
