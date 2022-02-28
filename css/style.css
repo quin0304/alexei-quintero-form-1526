@@ -29,12 +29,13 @@ form {
   background-color: #DDD;
   border-radius: 0.5rem;
   padding: 1rem;
+  margin-top: 1rem;
  
 }
 .box-title {
    position: absolute;
   z-index: 5; 
-   top: -15px;
+   top: -20px;
 width: fit-content;
 padding: 0.8rem;
   color: black;
