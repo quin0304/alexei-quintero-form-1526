@@ -38,7 +38,7 @@ padding: 0.5rem;
 
   
 }
-.box-title h1 {
+h1.box-title {
  font-size: 1.2rem;
   color: black;
   background-color: #F5F5F5;
