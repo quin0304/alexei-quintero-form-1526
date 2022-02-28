@@ -32,7 +32,9 @@ form {
  
 }
 .box-title {
-  position: relative;
+   position: absolute;
+  z-index: 5; 
+   top: -15px;
 width: fit-content;
 padding: 0.8rem;
   color: black;
@@ -40,6 +42,7 @@ padding: 0.8rem;
 font-size: 1rem;
   border: 0.1rem solid #DDD;
   top: -20%;
+  z-index:
   
 }
  .box-title h1{
