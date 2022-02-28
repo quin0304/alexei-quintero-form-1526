@@ -35,9 +35,13 @@ form {
 .box-title {
 width: fit-content;
 padding: 0.5rem;
-color: black;
+
+  
+}
+.box-title h1 {
+ font-size: 1.2rem;
+  color: black;
   background-color: #F5F5F5;
-  font-size: 1rem;
 }
 
 .error {
