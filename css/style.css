@@ -21,7 +21,7 @@ html {
 
 
 form {
- 
+ position: absolute;
   width: 20rem;
   margin: 0 auto;
   font-size: 1rem;
@@ -29,12 +29,7 @@ form {
   background-color: #DDD;
   border-radius: 0.5rem;
   padding: 1rem;
-  
-  
-}
-.clearfix{
-  position: absolute;
-
+ 
 }
 .box-title {
   position: relative;
@@ -44,7 +39,7 @@ padding: 0.8rem;
   background-color: #F5F5F5;
 font-size: 1rem;
   border: 0.1rem solid #DDD;
-  top: 10%;
+  top: -10%;
   
 }
  .box-title h1{
