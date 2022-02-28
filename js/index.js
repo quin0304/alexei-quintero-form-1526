@@ -19,23 +19,23 @@ function handleForm(event){
    
     if (fn.value !== ''){
         data.name = fn.value;//new property for name is declared inside the data object
-    } else{
+    } else {
         errors.push('Name is empty. Please enter your full name');
         }
 
     if (em.value !== ''){
         if(regex.test(em.value)){
             data.email = em.value;//new property is declared inside the data object
-        }else {
-            errors.push('Please enter the valid email');
-        }
-    }else{
+            } else {
+                errors.push('Please enter the valid email');
+            }
+    } else {
         errors.push('Email is empty. Please enter your email');
     }
     
     if (msg.value !== ''){
         data.message = msg.value;//new property for message is declared inside the data object
-        } else{
+        } else {
             errors.push('Message is empty. Please write your message');
             }
 
@@ -43,7 +43,7 @@ function handleForm(event){
 
     if(errors.length === 0){
     console.log(data);
-    fb.textContent = 'Thank you ' + fn.value + ' for filling out the form. Your email ' + em.value + ' is           saved. And your message is: \n' + msg.value;
+    fb.textContent = 'Thank you ' + fn.value + ' for filling out the form. Your email ' + em.value + ' is saved. And your message is: \n' + msg.value;
     err.textContent = '';
     //clears the text inputs
     fm.reset();
@@ -53,14 +53,14 @@ function handleForm(event){
          //prints error message bellow the form
          
         for(let singleError of errors){
-        //programmatically create list item
-        let li = document.createElement('li');
-     //add error message to list
-    li.textContent = singleError;
-        //append list item to unordered list
-    err.appendChild(li);
-    } 
-  }
+            //programmatically create list item
+            let li = document.createElement('li');
+            //add error message to list
+            li.textContent = singleError;
+            //append list item to unordered list
+            err.appendChild(li);
+          } 
+       }
 
 }
 fm.addEventListener('submit', handleForm);
