@@ -1,0 +1,153 @@
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+    width: 90%;
+    margin: 0 auto;
+  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt {
+  font-family: "Noto Serif", serif;
+  color: #2b2f4c;
+  margin: 0;
+}
+form {
+  font-size: 1rem;
+  line-height: 1.4;
+  background-color: #eaebef;
+  border-radius: 0px;
+  padding: 1rem;
+  box-shadow: #9a9daf;
+}
+.error {
+  color: red;
+}
+.headers1-form {
+  text-align: center;
+  color: #ffffff;
+  padding: 0.2rem 0;
+  width: 100%;
+  border-bottom: 0.2rem solid #f16139;
+  background-color: #4a4e6f;
+  margin-top: 0;
+}
+
+label {
+  color: #2b2f4c;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  border: none;
+  border-bottom: 0.1rem solid #9a9daf;
+  width: 98%;
+  padding: 0.3rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  border: 0.1rem solid #9a9daf;
+  margin-bottom: 0.5rem;
+  width: 99%;
+  resize: none;
+}
+
+input[type="radio"] {
+  padding: 0;
+}
+
+input[type="submit"] {
+  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background-color: #f16139;
+  color: #151726;
+  padding: 0.3rem 0;
+  border: none;
+  border-radius: 0;
+  text-align: center;
+  box-shadow: 0 0.1rem #535252;
+  width: 25%;
+}
+
+#commercial {
+  margin-bottom: 1rem;
+}
+
+placeholder {
+  color: #9a9daf;
+  font-size: 1rem;
+  font-weight: 100;
+}
+/* //js errors for form */
+.feedbackjs {
+  color: green;
+}
+.errorjs {
+  color: red;
+}
+/* --------MEDIA QUERIES------- */
+
+/* Landscape phone and up */
+
+@media only screen and (min-width: 50rem) {
+main {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+h1 {
+    color: #000000;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h4,
+  h5 {
+    font-size: 1.1rem;
+  }
+  form {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  input[type="text"],
+  select {
+    width: 90%;
+  }
+  input[type="email"] {
+    width: 97%;
+  }
+
+  .box {
+    float: left;
+    width: 50%;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
