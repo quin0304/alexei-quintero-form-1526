@@ -28,7 +28,8 @@ function handleForm(event){
             data.email = em.value;//new property is declared inside the data object
         }else {
             errors.push('Please enter the valid email');
-        }else{
+        }
+    }else{
         errors.push('Email is empty. Please enter your email');
     }
     
