@@ -1,5 +1,10 @@
 //Colors #DDD #F5F5F5 #6495ED
 
+img,
+object {
+  max-width: 100%;
+  height: auto;
+}
 html {
   font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
   font-size: 1rem;
@@ -31,6 +36,13 @@ form {
   box-shadow: #9a9daf;
   
 }
+.box-title{
+width: fit-content;
+padding: 1rem;
+color: black;
+  background-color: #F5F5F5;
+}
+
 .error {
   color: red;
 }
