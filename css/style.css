@@ -31,11 +31,13 @@ form {
   box-shadow: #9a9daf;
   
 }
-h1.box-title{
+
+.box-title {
 width: fit-content;
 padding: 0.5rem;
 color: black;
   background-color: #F5F5F5;
+  font-size: 1rem;
 }
 
 .error {
