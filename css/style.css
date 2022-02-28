@@ -1,5 +1,8 @@
+//Colors #DDD #F5F5F5 #6495ED
+
 html {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+  font-size: 1rem;
   font-style: normal;
   line-height: 1.5;
   margin: 0;
@@ -7,7 +10,7 @@ html {
   box-sizing: border-box;
 }
 main {
-    width: 90%;
+    width: 25rem;
     margin: 0 auto;
   }
 h1,
