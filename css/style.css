@@ -31,9 +31,9 @@ form {
   box-shadow: #9a9daf;
   
 }
-.box-title{
+h1.box-title{
 width: fit-content;
-padding: 1rem;
+padding: 0.5rem;
 color: black;
   background-color: #F5F5F5;
 }
