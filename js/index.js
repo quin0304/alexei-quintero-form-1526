@@ -6,12 +6,6 @@ let fb = document.querySelector('.feedback-js');//for feedback to appear bellow 
 let err = document.querySelector('.errors-js');//for errors to appear bellow form
 let regex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;//expression to create a filter for proper email input-written inside forward slashes
 
-
-
-
-
-
-
 function handleForm(event){
     event.preventDefault(); //prevents submitting form and preserves user input inside the form
     let data = {}; //variable as an empty object
