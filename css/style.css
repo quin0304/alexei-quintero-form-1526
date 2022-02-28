@@ -95,10 +95,10 @@ placeholder {
   font-weight: 100;
 }
 /* //js errors for form */
-.feedbackjs {
+.feedback-js {
   color: green;
 }
-.errorjs {
+.errors-js {
   color: red;
 }
 /* --------MEDIA QUERIES------- */
