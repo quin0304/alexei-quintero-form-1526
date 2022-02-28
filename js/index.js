@@ -1,4 +1,4 @@
-let fm = document.querrySelector('form');//for the form
+let fm = document.querySelector('form');//for the form
 let fn = document.getElementById('full-name');//for full name
 let em = document.getElementById('email');//for email
 let msg = document.getElementById('message');//fo rmessage
