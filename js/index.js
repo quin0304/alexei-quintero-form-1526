@@ -1,7 +1,7 @@
 let fm = document.querySelector('form');//for the form
 let fn = document.getElementById('full-name');//for full name
 let em = document.getElementById('email');//for email
-let msg = document.getElementById('message');//fo rmessage
+let msg = document.getElementById('message');//for rmessage
 let fb = document.querySelector('.feedback-js');//for feedback to appear bellow form
 let err = document.querySelector('.errors-js');//for errors to appear bellow form
 let regex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;//expression to create a filter for proper email input-written inside forward slashes
@@ -33,18 +33,16 @@ function handleForm(event){
     }
     
     if (msg.value !== ''){
-    
         data.message = msg.value;//new property for message is declared inside the data object
-    
-    } else{
-    errors.push('Message is empty. Please write your message');
-    }
+        } else{
+            errors.push('Message is empty. Please write your message');
+            }
 
     //handles feedback//error messages
 
     if(errors.length === 0){
     console.log(data);
-    fb.textContent = 'Thank you ' + fn.value + ' for filling out the form. Your email ' + em.value + ' is saved. And your message is: <br>' + msg.value;
+    fb.textContent = 'Thank you ' + fn.value + ' for filling out the form. Your email ' + em.value + ' is           saved. And your message is: \n' + msg.value;
     err.textContent = '';
     //clears the text inputs
     fm.reset();
