@@ -12,7 +12,7 @@
 
     <title>Alexei Quintero-Contact
     </title>
-    <link rel="icon" type="image/png" href="./img/aq-favicon-blue.png">
+    
     <!-- Google san-serif font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,10 +40,8 @@
      
     <section class="contact-form">
 
-        <h3 class="heading-background-blue">Get in Touch</h3>
-        <form action="<?php echo htmlspecialchars(
-            $_SERVER["PHP_SELF"]
-        ); ?>" onsubmit="return handleForm()" method="post">
+       
+        <form>
           <div class="clearfix">
           <div class="box">
           <label for="full-name">Full name:</label><br>
@@ -57,30 +55,17 @@
           </div>
           <div class="box">
           <label for="email">Email address</label><br>
-          <input type="email" id="email" name="email"  value="<?php if (
-              isset($email) &&
-              !$valid
-          ) {
-              echo $email;
-          } ?>" placeholder="Enter your email address">
+          <input type="text" id="email"  value="" placeholder="Enter your email address">
           </div>
           </div>
-          <h4 class="headers1-form">Got a project? Send us some details!</h4>
+         
           <textarea name="message"  rows="10" cols="40" >
               </textarea><br>
           <input type="submit" name="collect-data" id="submit" value="Submit">
         </form>
         <p class="feedbackjs"></p>
         <ul class="errorjs"></ul>
-        <?php
-        if (isset($feedback)) {
-            echo $feedback;
-        }
-
-        if (isset($error)) {
-            echo $error;
-        }
-        ?>
+        
       </section>
     </main>
 
