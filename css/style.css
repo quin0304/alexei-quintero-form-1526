@@ -21,6 +21,7 @@ html {
 
 
 form {
+  position: absolute;
   width: 20rem;
   margin: 0 auto;
   font-size: 1rem;
@@ -33,12 +34,14 @@ form {
 }
 
 .box-title {
+  position: relative;
 width: fit-content;
 padding: 0.8rem;
   color: black;
   background-color: #F5F5F5;
-font-size: 1.2rem;
+font-size: 1rem;
   border: 0.1rem solid #DDD;
+  top: -50%;
   
 }
 
