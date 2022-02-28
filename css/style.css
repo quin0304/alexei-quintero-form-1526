@@ -19,18 +19,16 @@ h3,
 h4,
 h5,
 h6,
-dt {
-  font-family: "Noto Serif", serif;
-  color: #2b2f4c;
-  margin: 0;
-}
+
 form {
+  width: 20rem;
   font-size: 1rem;
   line-height: 1.4;
   background-color: #DDD;
-  border-radius: 0px;
+  border-radius: 1rem;
   padding: 1rem;
   box-shadow: #9a9daf;
+  PADDING: 1rem;
 }
 .error {
   color: red;
@@ -52,9 +50,9 @@ label {
 input[type="text"],
 input[type="email"],
 select {
-  border: 0.1rem solid #9a9daf;
-  border-bottom: 0.1rem solid #9a9daf;
-  width: 98%;
+  border: 0.1rem solid #DDD;
+  
+  
   padding: 0.3rem;
   margin-top: 0;
   margin-bottom: 1rem;
